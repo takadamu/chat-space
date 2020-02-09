@@ -1,11 +1,11 @@
 .side_bar {
   width: 300px;
   height: 100vh;
-  color: white;
+  color: $basewhite;
 
   &__side-header {
     display: flex;
-    height: 100px;
+    height: $pxFull;
     align-items: center;
     background-color: #253141;
     padding: 0 20px;
@@ -15,7 +15,7 @@
       justify-content: space-between;
       line-height: 20px;
       height: 20px;
-      width: 100%;
+      width: $full;
 
         &__user-name {
           font-size: 16px;
@@ -31,7 +31,7 @@
         }
 
         a {
-          color: white;
+          color: $basewhite;
           text-decoration: none;
         }
       }
@@ -44,7 +44,7 @@
     padding: 20px 20px 0;
 
     &__group {
-      color: white;
+      color: $basewhite;
       text-decoration: none;
       margin-bottom: 40px;
 
