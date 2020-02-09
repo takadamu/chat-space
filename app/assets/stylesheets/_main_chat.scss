@@ -1,0 +1,127 @@
+.main-chat {
+  height: 100vh;
+  width: calc(100vw - 300px);
+
+  &__group-info {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 40px;
+    background-color: #ffffff;
+
+    &__left-box {
+      margin: 35px 0 0;
+
+      &__g-title {
+        font-size: 20px;
+        color: #333333;
+        margin-bottom: 20px;
+      }
+
+      &__member {
+        display: flex;
+        font-size: 12px;
+        color: #999999;
+      }
+    }
+
+    &__right-box {
+      display: flex;
+      justify-content: space-between;
+      text-decoration: none;
+      
+      &__edit {
+        font-size: 16px;
+        color: #38aef0;
+        border: 1px #38aef0 solid;
+        height: 40px;
+        width: 70px;
+        line-height: 40px;
+        margin: 30px 0 0;
+        padding: 0 20px;
+        position: absolute;
+        right: 40px;
+      }
+    }
+  }
+
+  &__message-list {
+    height: calc(100vh - 190px);
+    background-color: #fafafa;
+    padding: 35px 40px;
+    overflow:hidden;
+
+    &__messages {
+
+      &__up {
+        display: flex;
+        margin-bottom: 12px;
+        &__upuser {
+          font-size: 16px;
+          color: #333333;
+          font-weight: bold;
+        }
+
+        &__update {
+          font-size: 12px;
+          color: #999999;
+          padding: 0 0 0 10px;
+        }
+
+        &__text {
+          font-size: 14px;
+          color: #434A54;
+          margin-bottom: 46px;
+        }
+      }
+    }
+  }
+
+  &__form {
+    height: 90px;
+    padding: 20px 40px;
+    background-color:#d2d2d2;
+
+    &__new-message {
+      display: flex;
+      height: 50px;
+      width: 100%;
+
+      &__input {
+        position: relative;
+        height: 50px;
+        width: 100%;
+
+        &__text {
+          width: 100%;
+          height: 50px;
+          padding: 0 40px 0 10px;
+        }
+
+        &__img {
+          position: absolute;
+          top: 12px;
+          right: 10px;
+          font-size: 1.5em;
+          cursor: pointer;
+        }
+
+        &__file {
+          display: none;
+        }
+      }
+      
+      &__send {
+        width: 100px;
+        height: 50px;
+        line-height: 50px;
+        background-color: #38aef0;
+        color: #ffffff;
+        margin-left: 15px;
+        padding: 0 30px;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+  }
+}

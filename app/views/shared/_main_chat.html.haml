@@ -1,0 +1,54 @@
+.main-chat
+  .main-chat__group-info
+    .main-chat__group-info__left-box
+      %h1.main-chat__group-info__left-box__g-title
+        test
+      %ul.main-chat__group-info__left-box__member
+        Member : 
+    .main-chat__group-info__right-box
+      = link_to "#" do
+        .main-chat__group-info__right-box__edit
+          Edit
+
+
+  .main-chat__message-list
+
+    .main-chat__message-list__messages
+      .main-chat__message-list__messages__up
+        %p.main-chat__message-list__messages__up__upuser
+          masa
+        %p.main-chat__message-list__messages__up__update
+          2020/02/08(Sut) 21:30:00
+      %p.main-chat__message-list__messages__up__text
+        おはよう！
+
+    .main-chat__message-list__messages
+      .main-chat__message-list__messages__up
+        %p.main-chat__message-list__messages__up__upuser
+          masa
+        %p.main-chat__message-list__messages__up__update
+          2020/02/08(Sut) 21:30:00
+      %p.main-chat__message-list__messages__up__text
+        おはよう！
+
+    .main-chat__message-list__messages
+      .main-chat__message-list__messages__up
+        %p.main-chat__message-list__messages__up__upuser
+          masa
+        %p.main-chat__message-list__messages__up__update
+          2020/02/08(Sut) 21:30:00
+      %p.main-chat__message-list__messages__up__text
+        おはよう！
+
+
+  .main-chat__form
+    .main-chat__form__new-message
+      %form.main-chat__form__new-message__input
+        %input{type: "text", class: "main-chat__form__new-message__input__text", placeholder: "type a message"}
+        %label{class: "main-chat__form__new-message__input__img"}
+          = icon('far', 'image')
+          %input{type: "file", class: "main-chat__form__new-message__input__file"}
+      .main-chat__form__new-message__send
+        Send
+
+    
