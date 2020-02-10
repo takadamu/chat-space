@@ -3,6 +3,11 @@
   height: 100vh;
   color: $basewhite;
 
+  a {
+    color: $basewhite;
+    text-decoration: none;
+  }
+
   &__side-header {
     display: flex;
     height: $pxFull;
@@ -29,16 +34,12 @@
         &__edit{
           padding-right:5px;
         }
-
-        a {
-          color: $basewhite;
-          text-decoration: none;
-        }
       }
     }
   }
 
   &__group-list {
+    text-decoration: none;
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 20px 20px 0;
@@ -47,6 +48,7 @@
       color: $basewhite;
       text-decoration: none;
       margin-bottom: 40px;
+      text-decoration: none;
 
       &__g-name {
         margin-bottom: 5px;
