@@ -43,19 +43,19 @@
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 20px 20px 0;
+    overflow: scroll;
 
-    &__group {
+    &__g-group {
       color: $basewhite;
       text-decoration: none;
       margin-bottom: 40px;
-      text-decoration: none;
 
       &__g-name {
         margin-bottom: 5px;
         font-size: 15px;
       }
 
-      &__g-messages {
+      &__g-message {
         font-size: 11px;
       }
     }
