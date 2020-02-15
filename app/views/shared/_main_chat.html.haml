@@ -15,8 +15,7 @@
           Edit
 
   .main-chat__message-list
-    .main-chat__message-list__messages
-      = render @messages
+    = render @messages
 
   .main-chat__form
     = form_for [@group, @message] do |f|

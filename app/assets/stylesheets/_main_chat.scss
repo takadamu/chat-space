@@ -65,10 +65,11 @@
     overflow: scroll;
 
     &__messages {
+      padding-bottom: 40px;
 
       &__up {
         display: flex;
-        margin-bottom: 12px;
+        margin-bottom: 10px;
         
         &__upuser {
           font-size: 16px;
@@ -81,11 +82,13 @@
           color: $subTcolor;
           padding: 0 0 0 10px;
         }
+      }
 
-        &__text {
-          font-size: 14px;
-          color: #434A54;
-          margin-bottom: 46px;
+      &__lower {
+        font-size: 14px;
+        color: #434a54;
+        p {
+          padding-bottom: 10px;
         }
       }
     }
@@ -129,7 +132,6 @@
       height: $pxHalf;
       line-height: $pxHalf;
       margin-left: 15px;
-      // padding: 0 30px;
       text-align: center;
 
       &__submit {
